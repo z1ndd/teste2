@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include "./menu.html"; ?>
+    <?php include "./html/navbar.html"; ?>
 
     bananas
     
-    <?php include "./footer.html"; ?>
+    <?php //include "./footer.html"; ?>
 </body>
 </html>
