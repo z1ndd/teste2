@@ -8,9 +8,9 @@
 </head>
 <body>
     <?php include "./html/navbar.html"; ?>
-
+    <br>
     <?php include "./html/home.html"; ?>
-    
+    <br>
     <?php include "./html/footer.html"; ?>
 </body>
 </html>
