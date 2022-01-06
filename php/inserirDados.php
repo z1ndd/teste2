@@ -28,10 +28,12 @@
 		$password = $_REQUEST['password'];
 		
 		// Performing insert query execution
-		// here our table name is empregado
-		$sql = "INSERT INTO empregado VALUES ('$nome',
+		// here our table name is utilizador
+		$sql = "INSERT INTO utilizador VALUES ('$nome',
 			'$login','$mail','$password')";
-		
+
+
+
 		if(mysqli_query($conn, $sql)){
 			echo "<h3>data stored in a database successfully."
 				. " Please browse your localhost php my admin"

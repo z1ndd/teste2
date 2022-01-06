@@ -120,7 +120,7 @@
                     <br><br>
                     <textarea name="comment" rows="5" cols="40" placeholder="Insira aqui o seu comentário"></textarea>
                     <br>
-                    <input type="submit" name="submit" value="Submeter">  
+                    <button type="submit" class="btn btn-primary">Submeter</button> 
                     </form>
                 </div>
             </div>

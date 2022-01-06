@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
-              <a class="nav-link" href="./html/inserirUser.html">Inserir utilizador</a>
+              <a class="nav-link" href="../html/inserirUser.html">Inserir utilizador</a>
               <a class="nav-link" href="./eliminaUsers.php">Listar/Alterar/Eliminar utilizadores</a>
               <a class="nav-link" href="./reservas.php">Inserir reservas</a>
               <a class="nav-link" href="#">Listar reservas</a>
