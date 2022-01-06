@@ -24,7 +24,7 @@
               <a class="nav-link" href="#">Galeria</a>
               <a class="nav-link" href="./sobrenos.php">Sobre Nós</a>
               <a class="nav-link" href="#">Contactos</a>
-              <a class="nav-link" href="#">Admin</a>
+              <a class="nav-link" href="./php/admin.php">Admin</a>
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Pesquise aqui...." aria-label="Search">
                 <button class="btn btn-dark" type="submit">Pesquisa</button>
