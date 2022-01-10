@@ -11,34 +11,51 @@
     <title>Inserir Dados</title>
 </head>
 
-<body>
+<body> 
+	
 	<!-- navbar Admin -->
-	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="../index.php">FSJoalharia</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-				<a class="nav-link active" aria-current="page" href="../index.php">Home</a>
-				<a class="nav-link" href="#">Inserir utilizador</a>
-				<a class="nav-link" href="./eliminaUsers.php">Listar/Alterar/Eliminar utilizadores</a>
-				<a class="nav-link" href="./reservas.php">Inserir reservas</a>
-				<a class="nav-link" href="#">Listar reservas</a>
-				<a class="nav-link" href="#">Listar contactos</a>
-			</div>
-			</div>
-		</div>
-	</nav>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.php">FSJoalharia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+          <a class="nav-link" href="inserirUtilizador.php">Inserir utilizador</a>
+          <a class="nav-link" href="listaUtilizadores.php">Listar/Alterar/Eliminar utilizadores</a>
+          <a class="nav-link" href="#">Inserir produtos</a>
+          <a class="nav-link" href="#">Listar produtos</a>
+          <a class="nav-link" href="#">Listar contactos</a>
+        </div>
+        </div>
+      </div>
+    </nav>
 	<!-- fim navbar -->
 	<br>
 	<br>
 	<br>
 	<br>	
 	<!-- inserir user --> 
+
+	<?php
 	
-	<form class="col-md-6 w-50" style="margin-left:25%" action="../php/inserirDados.php" method="POST" id="form1">
+	if (!isset($_GET['id'])) {
+		header("location: listaUtilizadores.php");
+	} else {
+		$id = $_GET['id'];
+	} 
+	include "ligacaoBD.php"; 
+
+	$query = "SELECT * FROM utilizador WHERE iduser =$id";
+	$resultado = mysqli_query($liga, $query);
+	if (mysqli_num_rows($resultado) > 0) {
+		$row = mysqli_fetch_assoc($resultado);
+
+	?>
+	
+	<form class="col-md-6 w-50" style="margin-left:25%" action="../php/atualizaDados.php?id=<?php echo $row['iduser']; ?>" method="POST" id="form1">
 		<div class="form-group">
 			<label for="nome" style="text-align: left;">Nome</label>
 			<input type="text" name="nome" class="form-control" id="nome" placeholder="Insira o seu nome" minlength="8" maxlength="45" required>
@@ -62,6 +79,14 @@
 		<center><br><button type="submit" class="btn btn-primary">Inserir Dados</button></center>
 
 	</form>
+
+	<?php
+	
+	} else {
+		echo "Não há resultados";
+	}
+
+	?>
 </body>
 
 </html>
