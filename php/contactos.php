@@ -8,7 +8,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <title>Sobre nós</title>
+    <title>Contacte-nos</title>
 </head>
 <body>
     <!-- navbar -->
@@ -68,56 +68,17 @@
     </div>
     </center>
     <br>
-    <!-- Formulário https://www.w3schools.com/php/php_form_url_email.asp -->
-    <?php
-    // definição de variaveis e inicializão das mesmas
-    $nameErr = $emailErr = "";
-    $name = $email = $comment = "";
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty($_POST["name"])) {
-        $nameErr = "É necessário colocar o seu nome";
-    } else {
-        $name = test_input($_POST["name"]);
-        // Verificar se nome apenas contem letras e espaços
-        if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-        $nameErr = "Apenas letras e espaços são permitidos";
-        }
-    }
-    if (empty($_POST["email"])) {
-        $emailErr = "É necessário colocar o email";
-    } else {
-        $email = test_input($_POST["email"]);
-        // Verificar se o email está bem formado
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $emailErr = "Email inválido";
-        }
-    }
-    if (empty($_POST["comment"])) {
-        $comment = "";
-    } else {
-        $comment = test_input($_POST["comment"]);
-    }
-    }
-    function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-    }
-    ?>
+    <!-- Formulário -->
     <center>
     <div class="row" style="width: 150%;margin-left: 19%;">
         <div class="col-md-5">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Contacte-nos diretamente:</h5>
-                    <p><span class="error">* Campos obrigatórios</span></p>
-                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+                    <form method="post" action="registaContacto.php">
                     Nome: <input type="text" name="name">
-                    <span class="error">* <?php echo $nameErr;?></span>
                     <br><br>
                     E-mail: <input type="text" name="email">
-                    <span class="error">* <?php echo $emailErr;?></span>
                     <br><br>
                     <textarea name="comment" rows="5" cols="40" placeholder="Insira aqui o seu comentário"></textarea>
                     <br>
@@ -127,6 +88,7 @@
             </div>
         </div>
     </div>
+    
     <br>
     </center>
     <?php include "../html/footer.html"; ?>
