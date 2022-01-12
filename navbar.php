@@ -28,7 +28,7 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
               <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
-              <a class="nav-link" href="./galeria.php">Galeria</a>
+              <a class="nav-link" href="./php/galeria.php">Galeria</a>
               <a class="nav-link" href="./php/produtos.php">Produtos</a>
               <a class="nav-link" href="./php/sobrenos.php">Sobre Nós</a>
               <a class="nav-link" href="./php/contactos.php">Contactos</a>
