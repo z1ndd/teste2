@@ -11,6 +11,7 @@ include "ligacaoBD.php";
 
 //construção da query de inserção do registo na base de dados
 $query = "INSERT INTO contactos (nome, email, comentario) VALUES ('$nome', '$email', '$comentario')";
+//$query = "INSERT INTO contactos (id, nome, email, comentario) VALUES ('uuid()','$nome', '$email', '$comentario')";
 
 //se a query estiver correta, executa e mostra mensagem de registo adicionado
 if(mysqli_query($liga,$query ))

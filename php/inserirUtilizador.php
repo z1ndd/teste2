@@ -46,7 +46,7 @@
 	} else {
 		$id = $_GET['id'];
 	} 
-	include "ligacaoBD.php"; 
+	include_once "ligacaoBD.php"; 
 
 	$query = "SELECT * FROM utilizador WHERE iduser =$id";
 	$resultado = mysqli_query($liga, $query);
