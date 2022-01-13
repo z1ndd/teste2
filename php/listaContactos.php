@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Lista Utilizadores</title>
+	<title>Lista Contactos</title>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,9 +19,8 @@
 </head>
 
 <body>
-
-   	<!-- navbar Admin -->
-   	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <!-- navbar Admin -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.php">FSJoalharia</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,11 +48,9 @@
 		<table class="table" style="width: 75%">
 			<!--	<table class="table table-sm table-dark"> -->
 			<thead>
-				<th scope="col">ID</th>
 				<th scope="col">Nome</th>
 				<th scope="col">Email</th>
-				<th scope="col">Login</th>
-				<th scope="col">Opções</th>
+				<th scope="col">Comentário</th>
 			</thead>
 
 			<?php
@@ -61,7 +58,7 @@
 			//incluir o ficheiro para que a variável $liga seja reconhecida
 			include "ligacaoBD.php";
 			//query de consulta de todos os users registados
-			$query = "SELECT * FROM utilizador";
+			$query = "SELECT * FROM contactos";
 
 			//recuperação dos dados devolvidos pela consulta
 			$resultado = mysqli_query($liga, $query);
@@ -72,12 +69,10 @@
 			?>
 
 					<tr>
-						<th scope="row"><?php echo $row['iduser']; ?></th>
-						<td><?php echo $row['nome']; ?></td>
+						<th scope="row"><?php echo $row['nome']; ?></th>
 						<td><?php echo $row['email']; ?></td>
-						<td><?php echo $row['login']; ?></td>
-						<td><a href="editaUser.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;&nbsp;<a href="eliminaUser.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-trash"></i></a></td>
-					</tr>
+						<td><?php echo $row['comentario']; ?></td>
+                    </tr>
 
 			<?php
 				}

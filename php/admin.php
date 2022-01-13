@@ -12,7 +12,7 @@
 
 <body>
   <!-- navbar Admin -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.php">FSJoalharia</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
           <a class="nav-link" href="listaUtilizadores.php">Listar/Alterar/Eliminar utilizadores</a>
           <a class="nav-link" href="#">Inserir produtos</a>
           <a class="nav-link" href="#">Listar produtos</a>
-          <a class="nav-link" href="#">Listar contactos</a>
+          <a class="nav-link" href="listaContactos.php">Listar contactos</a>
         </div>
         </div>
       </div>
