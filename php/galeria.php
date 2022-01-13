@@ -11,33 +11,7 @@
     <title>Galeria</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.php">FSJoalharia</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">              
-              <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
-              <a class="nav-link" href="./galeria.php">Galeria</a>
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Coise</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              <a class="nav-link" href="./php/sobrenos.php">Sobre Nós</a>
-              <a class="nav-link" href="./php/contactos.php">Contactos</a>
-              <a class="nav-link" href="./php/admin.php">Admin</a>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Pesquise aqui...." aria-label="Search">
-                <button class="btn btn-dark" type="submit">Pesquisa</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
+<?php include "../navbar.php" ?>
 
 
 <?php include "../html/footer.html"; ?>

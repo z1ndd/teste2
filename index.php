@@ -7,7 +7,7 @@
     <title>FSJoalharia</title>
 </head>
 <body>
-    <?php include "./html/navbar.html"; ?>
+    <?php include "navbar.php"; ?>
     <br>
     <?php include "./html/home.html"; ?>
     <br>
