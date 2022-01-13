@@ -40,22 +40,22 @@
     <?php
 
 	if (!isset($_GET['id'])) {
-		header("location: listaUsers.php");
+		header("location: listaUtilizadores.php");
 	} else {
 		$id = $_GET['id'];
 	}
-	include "ligaBD.php";
+	include "ligacaoBD.php";
 
-	$query = "SELECT * FROM user WHERE iduser =$id";
+	$query = "SELECT * FROM utilizador WHERE iduser =$id";
 	$resultado = mysqli_query($liga, $query);
 	if (mysqli_num_rows($resultado) > 0) {
 		$row = mysqli_fetch_assoc($resultado);
 	?>
-		<form class="col-md-6 w-50" style="margin-left:25%" action="atualizaDados.php?id=<?php echo $row['iduser']; ?>" method="POST" id="form1">
+		<form class="col-md-6 w-50" style="margin-left:25%" action="atualizarDados.php?id=<?php echo $row['iduser']; ?>" method="POST" id="form1">
 			<div class="form-group">
 				<label for="nome" style="text-align: left;">Nome</label>
 				<input type="text" name="nome" class="form-control" id="nome" placeholder="Insira o seu nome" minlength="8" maxlength="45" value="<?php echo $row['nome']; ?>" required>
-			</div>x
+			</div>
 			<div class="form-group">
 				<label for="login">Login</label>
 				<input type="text" name="login" class="form-control" id="login" placeholder="Insira o seu login" value="<?php echo $row['login']; ?>" required>

@@ -17,10 +17,10 @@ $query = "UPDATE utilizador SET login ='$login', nome='$nome', email='$email', p
 //se a query estiver correta, executa e mostra mensagem de registo adicionado
 if(mysqli_query($liga,$query ))
 {
-	$mesg = "Registo Alterado com Sucesso";
+	$mesg = "Registo alterado com sucesso.";
 	echo "<script>alert('$mesg')</script>";
-	/* header("location: listaUsers.php"); */
-	echo "<a href='./listaUtilizadores.php'>voltar</a>";
+    echo "<a href='./listaUtilizadores.php'><button>Voltar</button></a>";
+	
 }
 else
 {   //caso a query falhe, mostra mensagemd e erro
