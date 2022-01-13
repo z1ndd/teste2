@@ -12,7 +12,7 @@ $password = $_POST['pass'];
 include "ligacaoBD.php";
 
 //construção da query de inserção do registo na base de dados
-$query = "UPDATE utilizador SET login ='$login', nome='$nome', email='$email',password='$password' WHERE iduser = $id";
+$query = "UPDATE utilizador SET login ='$login', nome='$nome', email='$email', password='$password' WHERE iduser = $id";
 
 //se a query estiver correta, executa e mostra mensagem de registo adicionado
 if(mysqli_query($liga,$query ))
