@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FSJoalharia</title>
-</head>
+<?php   $title = 'Homepage';
+        $currentPage = 'index';
+        include('elements/head.php');
+        include('elements/navbar.php'); ?>
+
 <body>
-    <?php include "navbar.php"; ?>
-    <br>
     <?php include "./html/home.html"; ?>
     <br>
-    <?php include "./html/footer.html"; ?>
+    <?php include "elements/footer.php"; ?>
 </body>
-</html>

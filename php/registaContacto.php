@@ -17,7 +17,7 @@ if(mysqli_query($liga,$query ))
 {
 	$mesg = "Comentário registado com sucesso.";
 	echo "<script>alert('$mesg')</script>";
-    echo "<a href='./contactos.php'><button>Voltar</button></a>";
+    echo "<a href='./contatos.php'><button>Voltar</button></a>";
 }
 else
 {   //caso a query falhe, mostra mensagemd e erro
