@@ -9,8 +9,8 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <div class="navbar-nav">
                     <a class="nav-link" href="index.php">Home</a>
-                    <a class="nav-link" href="inserirUtilizador.php">Inserir utilizador</a>
-                    <a class="nav-link" href="listaUtilizadores.php">Listar/Alterar/Eliminar utilizadores</a>
+                    <a class="nav-link" href="inserirUtilizador.php">Inserir Utilizador</a>
+                    <a class="nav-link" href="listaUtilizador.php">Listar/Alterar/Eliminar Utilizadores</a>
                     <a class="nav-link" href="#">Inserir produtos</a>
                     <a class="nav-link" href="#">Listar produtos</a>
                     <a class="nav-link" href="#">Listar contactos</a>

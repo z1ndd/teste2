@@ -2,22 +2,25 @@
 
 //receber os valores que são enviados pelo formulário de registo de utilizador
 
-$nome = $_POST['name'];
-$email = $_POST['email'];
-$comentario = $_POST['comment'];
+$id = $_GET['id'];
+$nome = $_POST['nome'];
+$login = $_POST['login'];
+$email = $_POST['mail'];
+$password = $_POST['pass'];
 
 //incluir o ficheiro de ligação à base de dados, para que a variável $liga possa ser utilizada
 include "ligacaoBD.php";
 
 //construção da query de inserção do registo na base de dados
-$query = "INSERT INTO contactos (nome, email, comentario) VALUES ('$nome', '$email', '$comentario')";
+$query = "UPDATE utilizador SET login ='$login', nome='$nome', email='$email',password='$password' WHERE iduser = $id";
 
 //se a query estiver correta, executa e mostra mensagem de registo adicionado
 if(mysqli_query($liga,$query ))
 {
-	$mesg = "Comentário registado com sucesso.";
+	$mesg = "Registo Alterado com Sucesso";
 	echo "<script>alert('$mesg')</script>";
-    echo "<a href='./contatos.php'><button>Voltar</button></a>";
+	/* header("location: listaUsers.php"); */
+	echo "<a href='listaUtilizadores.php'>voltar</a>";
 }
 else
 {   //caso a query falhe, mostra mensagemd e erro
