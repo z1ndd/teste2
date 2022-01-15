@@ -1,4 +1,4 @@
-<?php include('head.php'); ?>
+<?php include('head-index.php'); ?>
 <header class="navbar navbar-default navbar-static-top">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
@@ -17,5 +17,5 @@
                 </div>
             </div>
         </div>
-    </nav><br><br><br>
+    </nav><br>
 </header>
