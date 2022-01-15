@@ -2,7 +2,7 @@
 <header class="navbar navbar-default navbar-static-top">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.php">FSJoalharia</a>
+            <a class="navbar-brand" href="../index.php">FSJoalharia</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
