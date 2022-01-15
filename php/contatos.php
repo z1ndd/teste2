@@ -20,16 +20,12 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+              <a class="nav-link" href="../index.php">Home</a>
               <a class="nav-link" href="galeria.php">Galeria</a>
               <a class="nav-link" href="produtos.php">Produtos</a>
               <a class="nav-link" href="sobrenos.php">Sobre Nós</a>
-              <a class="nav-link" href="#">Contactos</a>
+              <a class="nav-link active" aria-current="page" href="contatos.php">Contactos</a>
               <a class="nav-link" href="admin.php">Admin</a>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Pesquise aqui...." aria-label="Search">
-                <button class="btn btn-dark" type="submit">Pesquisa</button>
-              </form>
             </div>
           </div>
         </div>

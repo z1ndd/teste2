@@ -11,7 +11,26 @@
     <title>Galeria</title>
 </head>
 <body>
-<?php include "../navbar.php" ?>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.php">FSJoalharia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="../index.php">Home</a>
+              <a class="nav-link active" aria-current="page" href="galeria.php">Galeria</a>
+              <a class="nav-link" href="produtos.php">Produtos</a>
+              <a class="nav-link" href="sobrenos.php">Sobre Nós</a>
+              <a class="nav-link" href="contatos.php">Contactos</a>
+              <a class="nav-link" href="admin.php">Admin</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- fim navbar -->
 
 
 <?php include "../html/footer.html"; ?>
