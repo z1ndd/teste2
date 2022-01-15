@@ -1,5 +1,5 @@
 <?php   $title = 'Lista de Utilizadores';
-        $currentPage = 'listaUtilizadores';
+        $currentPage = 'lista-utilizador';
         include('../elements/head-admin.php');
         include('../elements/navbar-admin.php'); ?>
 
