@@ -4,7 +4,7 @@
 $id = $_GET['id'];
 
 //construção da query de eliminação do registo especifico
-$query = "DELETE FROM user WHERE iduser=$id";
+$query = "DELETE FROM utilizador WHERE iduser=$id";
 
 //inclusão do ficheiro de ligação à base de dados, para a utilização da variável $liga
 include "ligacaoBD.php";
