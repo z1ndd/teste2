@@ -20,7 +20,7 @@ if(mysqli_query($liga,$query ))
 	$mesg = "Registo Alterado com Sucesso";
 	echo "<script>alert('$mesg')</script>";
 	/* header("location: listaUsers.php"); */
-	echo "<a href='listaUtilizador.php'>voltar</a>";
+	echo "<a href='lista-utilizador.php'>voltar</a>";
 }
 else
 {   //caso a query falhe, mostra mensagemd e erro

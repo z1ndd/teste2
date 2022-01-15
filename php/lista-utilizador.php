@@ -1,7 +1,7 @@
 <?php   $title = 'Lista de Utilizadores';
         $currentPage = 'listaUtilizadores';
-        include('elements/head-admin.php');
-        include('elements/navbar-admin.php'); ?>
+        include('../elements/head-admin.php');
+        include('../elements/navbar-admin.php'); ?>
 
 <body>
 	<center>
@@ -35,7 +35,7 @@
 						<td><?php echo $row['nome']; ?></td>
 						<td><?php echo $row['email']; ?></td>
 						<td><?php echo $row['login']; ?></td>
-						<td><a href="editaUser.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;&nbsp;<a href="eliminaUser.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-trash"></i></a></td>
+						<td><a href="edita-utilizador.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;&nbsp;<a href="elimina-utilizador.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-trash"></i></a></td>
 					</tr>
 
 			<?php

@@ -1,7 +1,7 @@
 <?php $title = 'Sobre Nós';
       $currentPage = 'sobreNos';
-      include('elements/head.php');
-      include('elements/navbar.php'); ?>
+      include('../elements/head.php');
+      include('../elements/navbar.php'); ?>
 
 <body>
     <section class="about-us" style="width: 75%; margin-left: 12.5%">
@@ -23,9 +23,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="img/AboutUs1.jpg" alt="Diamante1" style="width:50%" class="rounded float-end" alt="..."> </td>
-                        <td><img src="img/AboutUs3.jpg" alt="Diamante2" style="width:50%" class="rounded float-end" alt="..."></td>
-                        <td><img src="img/AboutUs2.jpg" alt="Diamante3" style="width:50%" class="rounded float-end" alt="..."></td>
+                        <td><img src="../img/AboutUs1.jpg" alt="Diamante1" style="width:50%" class="rounded float-end" alt="..."> </td>
+                        <td><img src="../img/AboutUs3.jpg" alt="Diamante2" style="width:50%" class="rounded float-end" alt="..."></td>
+                        <td><img src="../img/AboutUs2.jpg" alt="Diamante3" style="width:50%" class="rounded float-end" alt="..."></td>
                         </tr>
                 </tbody>
             </table>
@@ -38,6 +38,6 @@
     </section>
 
    
-    <?php include "elements/footer.php"; ?>
+    <?php include "../elements/footer.php"; ?>
 </body>
 </html>

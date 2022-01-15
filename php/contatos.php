@@ -1,7 +1,7 @@
 <?php $title = 'Contatos';
       $currentPage = 'contatos';
-      include('elements/head.php');
-      include('elements/navbar.php'); ?>
+      include('../elements/head.php');
+      include('../elements/navbar.php'); ?>
 
 <body>    
     <center>
@@ -55,5 +55,5 @@
     </div>
     </center>
 
-    <?php include "elements/footer.php"; ?>
+    <?php include "../elements/footer.php"; ?>
 </body>

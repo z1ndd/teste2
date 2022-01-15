@@ -8,12 +8,12 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="../index.php">Home</a>
-                    <a class="nav-link" href="galeria.php">Galeria</a>
-                    <a class="nav-link" href="produtos.php">Produtos</a>
-                    <a class="nav-link" href="sobre-nos.php">Sobre Nós</a>
-                    <a class="nav-link" href="contatos.php">Contatos</a>
-                    <a class="nav-link" href="admin.php">Admin</a>
+                    <a class="nav-link" href="index.php">Home</a>
+                    <a class="nav-link" href="php/galeria.php">Galeria</a>
+                    <a class="nav-link" href="php/produtos.php">Produtos</a>
+                    <a class="nav-link" href="php/sobre-nos.php">Sobre Nós</a>
+                    <a class="nav-link" href="php/contatos.php">Contatos</a>
+                    <a class="nav-link" href="php/admin.php">Admin</a>
                 </div>
             </div>
         </div>

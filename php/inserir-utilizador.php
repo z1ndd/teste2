@@ -1,14 +1,14 @@
 <?php   $title = 'Inserir Utilizador';
-        $currentPage = 'inserirUtilizador';
-        include('elements/head-admin.php');
-        include('elements/navbar-admin.php'); ?>
+        $currentPage = 'inserir-utilizador';
+        include('../elements/head-admin.php');
+        include('../elements/navbar-admin.php'); ?>
 	<!-- inserir user --> 
 <body>
 	
 	<?php
 	
 	if (!isset($_GET['id'])) {
-		header("location: listaUtilizador.php");
+		header("location: lista-utilizador.php");
 	} else {
 		$id = $_GET['id'];
 	} 
@@ -21,7 +21,7 @@
 
 	?>
 	
-	<form class="col-md-6 w-50" style="margin-left:25%" action="atualizarDados.php?id=<?php echo $row['iduser']; ?>" method="POST" id="form1">
+	<form class="col-md-6 w-50" style="margin-left:25%" action="atualizar-dados.php?id=<?php echo $row['iduser']; ?>" method="POST" id="form1">
 		<div class="form-group">
 			<label for="nome" style="text-align: left;">Nome</label>
 			<input type="text" name="nome" class="form-control" id="nome" placeholder="Insira o seu nome" minlength="8" maxlength="45" required>
