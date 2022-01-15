@@ -3,6 +3,7 @@
         include('../elements/head-admin.php');
         include('../elements/navbar-admin.php'); ?>
 
+<body>
 <?php
 
 	if (!isset($_GET['id'])) {
@@ -58,4 +59,4 @@
 	</script>
 
 	</center>
-</body>
+	</body>

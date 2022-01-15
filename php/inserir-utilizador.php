@@ -6,7 +6,7 @@
 <body>
 	
 	<?php
-	
+	/*
 	if (!isset($_GET['id'])) {
 		header("location: lista-utilizador.php");
 	} else {
@@ -14,14 +14,14 @@
 	} 
 	include "ligacaoBD.php"; 
 
-	$query = "SELECT * FROM utilizador WHERE iduser =$id"; #WHERE iduser =$id
+	$query = "SELECT * FROM utilizador WHERE iduser =$id";
 	$resultado = mysqli_query($liga, $query);
 	if (mysqli_num_rows($resultado) > 0) {
 		$row = mysqli_fetch_assoc($resultado);
-
+*/
 	?>
 	
-	<form class="col-md-6 w-50" style="margin-left:25%" action="atualizar-dados.php?id=<?php echo $row['iduser']; ?>" method="POST" id="form1">
+	<form class="col-md-6 w-50" style="margin-left:25%" action="insere-dados.php?id=<?php echo $row['iduser']; ?>" method="POST" id="form1">
 		<div class="form-group">
 			<label for="nome" style="text-align: left;">Nome</label>
 			<input type="text" name="nome" class="form-control" id="nome" placeholder="Insira o seu nome" minlength="8" maxlength="45" required>
@@ -47,12 +47,19 @@
 	</form>
 
 	<?php
-	
+	/*
 	} else {
 		echo "Não há resultados";
 	}
-
+*/
 	?>
+	<script>
+		$("#form1").validate({
+			rules: {
+				repass: {
+					equalTo: "#pass"
+				}
+			}
+		});
+	</script>
 </body>
-
-</html>

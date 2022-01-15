@@ -1,4 +1,4 @@
-<?php include('head-index.php'); ?>
+<?php include('head.php'); ?>
 <header class="navbar navbar-default navbar-static-top">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
