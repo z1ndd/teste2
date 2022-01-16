@@ -14,7 +14,7 @@ mysqli_query($liga,"SET CHARACTER SET 'utf8'");
 
 //caso a ligação não seja bem sucedida, termina essa ligação e mostra a mensagem de erro
 if(!$liga){
-	die("A ligação falhou. ".mysqli_connect_error());
+	die("A Ligação Falhou. ".mysqli_connect_error());
 }
 //echo "Ligação estabelecida com sucesso!";
 
