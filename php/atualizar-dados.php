@@ -19,7 +19,7 @@ if(mysqli_query($liga,$query ))
 {
 	$mesg = "Registo alterado com sucesso.";
 	echo "<script>alert('$mesg')</script>";
-    echo "<a href='./listaUtilizadores.php'><button>Voltar</button></a>";
+    echo "<a href='./lista-utilizador.php'><button>Voltar</button></a>";
 	
 }
 else
