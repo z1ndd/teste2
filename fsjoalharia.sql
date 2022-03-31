@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2022 at 10:07 PM
+-- Generation Time: Jan 20, 2022 at 04:33 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -94,19 +94,8 @@ CREATE TABLE `contactos` (
 --
 
 INSERT INTO `contactos` (`nome`, `email`, `comentario`) VALUES
-('teste', 'teste', 'teste'),
-('a', 'fabio_silvaa@outlook.coma', 'adsa'),
-('teste2', 'asdadautlook.com', 'asda'),
-('', 'asd', 'sad'),
-('asd', 'sad', 'dsa'),
-('a', 'fabio_silvaa@outlook.com', 'teste55'),
-('', 'fabio_silvaa@outlook.com', 'fas'),
-('a', 'teste', 'asdad'),
-('a', 'fabio_silvaa@outlook.com', 'sad'),
-('a', 'fabio_silvaa@outlook.com', 'asd'),
-('a', 'fabio_silvaa@outlook.com', 'asd'),
-('a', 'fabio_silvaa@outlook.comasd', 'asd'),
-('a', 'fabio_silvaa@outlook.com', 'asda');
+('Alberto', 'Alberto@gmail.com', 'Muito boa página.'),
+('Artur', 'artur@outlook.com', 'Bons produtos.');
 
 -- --------------------------------------------------------
 
@@ -115,10 +104,28 @@ INSERT INTO `contactos` (`nome`, `email`, `comentario`) VALUES
 --
 
 CREATE TABLE `produtos` (
-  `id` int(11) NOT NULL,
+  `id` int(2) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `categoria` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `produtos`
+--
+
+INSERT INTO `produtos` (`id`, `nome`, `categoria`) VALUES
+(1, 'Charming', 'Anéis de Casamento'),
+(2, 'Classic', 'Anéis de Casamento'),
+(3, 'Gracious', 'Anéis de Casamento'),
+(4, 'Immortal', 'Anéis de Casamento'),
+(5, 'Pure', 'Anéis de Casamento'),
+(6, 'Sense', 'Anéis de Casamento'),
+(7, 'Lighting', 'Jóias'),
+(8, 'Trident', 'Jóias'),
+(9, 'Poseidon', 'Jóias'),
+(10, 'Pegasus', 'Jóias'),
+(11, 'Anel 1', 'Jóias'),
+(12, 'Anel 2', 'Jóias');
 
 -- --------------------------------------------------------
 
@@ -139,12 +146,19 @@ CREATE TABLE `utilizador` (
 --
 
 INSERT INTO `utilizador` (`iduser`, `email`, `login`, `nome`, `password`) VALUES
-(1, 'fabio@fsjoalharia.com', 'fabioadmin', 'Fabio', 'fabioadmin'),
-(4, 'fabio_silvaa@outlook.com', 'teste99999999', 'testeeeee', 'teste');
+(12, 'carlos@outlook.com', 'Carlos1996', 'CarlosAlberto', 'teste'),
+(13, 'diogof@gmail.com', 'DiogoF', 'DiogoFreitas', 'diogo'),
+(15, 'admin@fsjoalharia.pt', 'admin', 'admin', '1234');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `produtos`
+--
+ALTER TABLE `produtos`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `utilizador`
@@ -157,10 +171,16 @@ ALTER TABLE `utilizador`
 --
 
 --
+-- AUTO_INCREMENT for table `produtos`
+--
+ALTER TABLE `produtos`
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
 -- AUTO_INCREMENT for table `utilizador`
 --
 ALTER TABLE `utilizador`
-  MODIFY `iduser` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `iduser` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

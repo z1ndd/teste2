@@ -6,7 +6,5 @@
 <body>
 
 
-Página de admin
-
 <?php include "../elements/footer.php"; ?>
 </body>

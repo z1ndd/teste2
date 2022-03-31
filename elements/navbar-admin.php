@@ -12,7 +12,7 @@
                     <a class="nav-link" href="inserir-utilizador.php">Inserir Utilizador</a>
                     <a class="nav-link" href="lista-utilizador.php">Listar/Alterar/Eliminar Utilizadores</a>
                     <a class="nav-link" href="inserir-produto.php">Inserir produtos</a>
-                    <a class="nav-link" href="#">Listar produtos</a>
+                    <a class="nav-link" href="lista-produto.php">Listar produtos</a>
                     <a class="nav-link" href="lista-contactos.php">Listar contactos</a>
                 </div>
             </div>

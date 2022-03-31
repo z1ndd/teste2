@@ -5,7 +5,7 @@
 	<!-- inserir user --> 
 <body>
 		
-	<form class="col-md-6 w-50" style="margin-left:25%" action="insere-dados.php" method="POST" id="form1">
+	<form class="col-md-6 w-50" style="margin-left:25%" action="insere-utilizador.php" method="POST" id="form1">
 		<div class="form-group">
 			<label for="nome" style="text-align: left;">Nome</label>
 			<input type="text" name="nome" class="form-control" id="nome" placeholder="Insira o seu nome" minlength="8" maxlength="45" required>

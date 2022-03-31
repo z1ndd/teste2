@@ -12,10 +12,11 @@
                     <a class="nav-link" href="galeria.php">Galeria</a>
                     <a class="nav-link" href="produtos.php">Produtos</a>
                     <a class="nav-link" href="sobre-nos.php">Sobre Nós</a>
-                    <a class="nav-link" href="contatos.php">Contatos</a>
+                    <a class="nav-link" href="contactos.php">Contactos</a>
+                    <a class="nav-link" href="login.php">Login/Registo</a>
                     <a class="nav-link" href="admin.php">Admin</a>
                 </div>
             </div>
         </div>
-    </nav><br><br><br>
+    </nav><br><br>
 </header>

@@ -11,7 +11,9 @@ include "ligacaoBD.php";
 
 //se a query for executada com sucesso
 if(mysqli_query($liga, $query)){
-	echo "<a href='lista-utilizador.php'>Registo Eliminado</a>";
+	$mesg = "Utilizador eliminado com sucesso.";
+	echo "<script>alert('$mesg')</script>";
+    echo "<a href='./lista-utilizador.php'><button>Voltar</button></a>";
 }else{ //caso contrário, mostra o erro
 	echo "Erro: ".$query."<br>".mysqli_error($liga);
 }

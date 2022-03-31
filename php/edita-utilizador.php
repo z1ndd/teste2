@@ -1,62 +1,32 @@
-<?php   $title = 'Editar Utilizador';
-        $currentPage = 'edita-utilizador';
-        include('../elements/head-admin.php');
-        include('../elements/navbar-admin.php'); ?>
-
-<body>
 <?php
 
-	if (!isset($_GET['id'])) {
-		header("location: lista-utilizador.php");
-	} else {
-		$id = $_GET['id'];
-	}
-	include "ligacaoBD.php";
+//receber os valores que são enviados pelo formulário de registo de utilizador
 
-	$query = "SELECT * FROM utilizador WHERE iduser =$id";
-	$resultado = mysqli_query($liga, $query);
-	if (mysqli_num_rows($resultado) > 0) {
-		$row = mysqli_fetch_assoc($resultado);
-	?>
-		<form class="col-md-6 w-50" style="margin-left:25%" action="atualizar-dados.php?id=<?php echo $row['iduser']; ?>" method="POST" id="form1">
-			<div class="form-group">
-				<label for="nome" style="text-align: left;">Nome</label>
-				<input type="text" name="nome" class="form-control" id="nome" placeholder="Insira o seu nome" minlength="8" maxlength="45" value="<?php echo $row['nome']; ?>" required>
-			</div>x
-			<div class="form-group">
-				<label for="login">Login</label>
-				<input type="text" name="login" class="form-control" id="login" placeholder="Insira o seu login" value="<?php echo $row['login']; ?>" required>
-			</div>
-			<div class="form-group">
-				<label for="mail">Email</label>
-				<input type="email" name="mail" class="form-control" id="mail" placeholder="Insira o seu email" value="<?php echo $row['email']; ?>" required>
-			</div>
-			<div class="form-group">
-				<label for="pass">Password</label>
-				<input type="password" name="pass" class="form-control" id="pass" placeholder="Insira a sua password" value="<?php echo $row['password']; ?>" required>
-			</div>
-			<div class="form-group">
-				<label for="repass">Password</label>
-				<input type="password" name="repass" class="form-control" id="repass" placeholder="Confirme a password" value="<?php echo $row['password']; ?>" required>
-			</div>
-			<center><br><button type="submit" class="btn btn-primary">Atualizar Dados</button></center>
+$id = $_GET['id'];
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$login = $_POST['login'];
+$password = $_POST['pass'];
 
-		</form>
-	<?php
-	} else {
-		echo "Não há resultados";
-	}
+//incluir o ficheiro de ligação à base de dados, para que a variável $liga possa ser utilizada
+include "ligacaoBD.php";
 
-	?>
-	<script>
-		$("#form1").validate({
-			rules: {
-				repass: {
-					equalTo: "#pass"
-				}
-			}
-		});
-	</script>
+//construção da query de inserção do registo na base de dados
+$query = "UPDATE utilizador SET login ='$login', nome='$nome', email='$email', password='$password' WHERE iduser = $id";
 
-	</center>
-	</body>
+//se a query estiver correta, executa e mostra mensagem de registo adicionado
+if(mysqli_query($liga,$query ))
+{
+	$mesg = "Registo alterado com sucesso.";
+	echo "<script>alert('$mesg')</script>";
+    echo "<a href='./lista-utilizador.php'><button>Voltar</button></a>";
+	
+}
+else
+{   //caso a query falhe, mostra mensagemd e erro
+	echo "Erro: ".$query."<br>".mysqli_error($liga);
+}
+//no final deve ser desligada a ligação
+mysqli_close($liga);
+
+?>

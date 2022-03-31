@@ -1,5 +1,5 @@
-<?php   $title = 'Inserir Utilizador';
-        $currentPage = 'inserir-utilizador';
+<?php   $title = 'Lista Contactos';
+        $currentPage = 'lista contactos';
         include('../elements/head-admin.php');
         include('../elements/navbar-admin.php'); ?>
 <body>

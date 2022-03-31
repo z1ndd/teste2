@@ -36,6 +36,7 @@
             facilis facere odio maiores suscipit, laudantium expedita laboriosam tenetur eligendi. Voluptatum molestiae aliquam dignissimos omnis quos aspernatur veritatis, debitis facilis hic maiores dicta nesciunt ut nam deserunt id sed placeat fugiat
             dolore? Tempore, quae? </p>
     </section>
+    
 
    
     <?php include "../elements/footer.php"; ?>

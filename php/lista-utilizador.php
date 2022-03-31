@@ -33,9 +33,9 @@
 					<tr>
 						<th scope="row"><?php echo $row['iduser']; ?></th>
 						<td><?php echo $row['nome']; ?></td>
-						<td><?php echo $row['email']; ?></td>
 						<td><?php echo $row['login']; ?></td>
-						<td><a href="edita-utilizador.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;&nbsp;<a href="elimina-utilizador.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-trash"></i></a></td>
+						<td><?php echo $row['email']; ?></td>
+						<td><a href="editar-utilizador.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;&nbsp;<a href="elimina-utilizador.php?id=<?php echo $row['iduser']; ?>"><i class="fa fa-trash"></i></a></td>
 					</tr>
 
 			<?php
@@ -48,5 +48,3 @@
 		</table>
 	</center>
 </body>
-
-</html>

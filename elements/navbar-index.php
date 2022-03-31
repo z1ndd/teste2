@@ -12,7 +12,8 @@
                     <a class="nav-link" href="php/galeria.php">Galeria</a>
                     <a class="nav-link" href="php/produtos.php">Produtos</a>
                     <a class="nav-link" href="php/sobre-nos.php">Sobre Nós</a>
-                    <a class="nav-link" href="php/contatos.php">Contatos</a>
+                    <a class="nav-link" href="php/contactos.php">Contactos</a>
+                    <a class="nav-link" href="php/login.php">Login/Registo</a>
                     <a class="nav-link" href="php/admin.php">Admin</a>
                 </div>
             </div>
